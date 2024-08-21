@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: user-kafka-streams
+  kafka:
+    streams:
+      bootstrap-servers: localhost:9092
+      application-id: user-kafka-streams
+    properties:
+      default:
+        key.serde: 'org.apache.kafka.common.serialization.Serdes$StringSerde'
+        value.serde: 'org.apache.kafka.common.serialization.Serdes$StringSerde'
